@@ -297,7 +297,7 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
             }
         });
 
-        //load icon image
+        //load icon image //
         if (eventData.getEventLogoImage() != null && !eventData.getEventLogoImage().isEmpty() && !eventData.getEventLogoImage().equals("")) {
             Glide.with(mContext).asBitmap()
                     .load(eventData.getEventLogoImage())
