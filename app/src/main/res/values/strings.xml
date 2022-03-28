@@ -1,0 +1,43 @@
+<resources>
+    <string name="something_went_wrong_text">Something went wrong. Please try again later!!!!</string>
+    <string name="something_went_wrong_text_p">Something went wrong. Please try again !!!</string>
+    <string name="media_picker_ok">Ok</string>
+    <string name="dialog_button_remove">Remove</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="title_pc_info">Info</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="message_pc_info">Talk to Sellers directly on Chat or Video call. Ask for images of products in Chat or see the products in real-time in a Video call.</string>
+    <string name="user_name_hint_text">Name</string>
+    <string name="user_email_hit_text">Email</string>
+    <string name="user_meeting_id_hint_text">Meeting ID</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="logut_message">Are you sure you want to Logout?</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="app_tittle_name">Rafiky</string>
+    <string name="btn_title_connect">Connect</string>
+    <string name="app_tittle_string">Rafiky Connect</string>
+    <string name="validation_name_required">Name Required</string>
+    <string name="validation_email_required">Email Required</string>
+    <string name="valid_email_required">Valid Email Required</string>
+    <string name="validation_meetingid_required">Meeting Id Required</string>
+    <string name="snackbar_ok_title">OK</string>
+    <string name="error_room_not_found">Room Not Found!</string>
+    <string name="error_title">Error</string>
+    <string name="no_language_available">No Language Available</string>
+    <string name="events_title">Events</string>
+    <string name="select_language_title">Select Language</string>
+    <string name="fill_field_error_msg">You must fill all the fields</string>
+    <string name="field_empty_error_msg">Field cannot be empty</string>
+    <string name="valid_email_error_msg">Valid Email Required</string>
+    <string name="username_empty_error">Username cannot be empty</string>
+    <string name="email_empty_erorr">Email cannot be empty</string>
+    <string name="meetingid_empty_error">Meeting Id cannot be empty</string>
+    <string name="meeting_unavilable_error">Meeting Unavailable</string>
+    <string name="exit_app_title">Exit App</string>
+    <string name="logout_title">Logout</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="your_event_titile">Your Event</string>
+    <string name="onconnect_msg">Thank you for your patience, the host will present soon</string>
+
+</resources>

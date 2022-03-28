@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dimen_10dp"
+    android:layout_marginTop="52dp"
+    android:layout_marginEnd="@dimen/dimen_10dp"
+    android:layout_marginBottom="52dp"
+    android:elevation="10dp"
+    android:gravity="center"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_internet_no_bg" />
+
+        <TextView
+            android:id="@+id/spinAndWinReward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sp_new"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:text="Please check your connection status and try again"
+            android:textColor="@color/text_selection_color"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sp_new"
+            android:gravity="center"
+            android:text="No Internet"
+            android:textColor="@color/text_selection_color"
+            android:textSize="@dimen/dimen_30sp" />
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/location_button_corner_radius"
+            android:text="Retry"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

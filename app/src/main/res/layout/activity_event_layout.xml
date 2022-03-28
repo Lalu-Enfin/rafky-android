@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme_color"
+    android:orientation="vertical"
+    tools:context=".ui.Event.EventActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <include
+            android:id="@+id/actionToolbar"
+
+            layout="@layout/event_toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerViewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:shimmer_base_color="@color/app_theme_color_dark"
+        app:shimmer_highlight_color="@color/app_theme_color_dark"
+        android:outlineAmbientShadowColor="@color/app_theme_color_dark"
+        app:shimmer_auto_start="false"
+        android:visibility="visible"
+        app:shimmer_duration="800">
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/shapableiv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/logo_img" />
+
+        <ExpandableListView
+            android:id="@+id/expandblelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/shapableiv"
+            android:scrollIndicators="right" />
+
+
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

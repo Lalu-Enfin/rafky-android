@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="site.forgus.plugins.apigenerator.setting.CURLSettingState">
+    <option name="moduleInfoList">
+      <list>
+        <CURLModuleInfo>
+          <option name="id" value="258410802817200" />
+          <option name="moduleName" value="Rafiky_Connect" />
+        </CURLModuleInfo>
+        <CURLModuleInfo>
+          <option name="id" value="258410842574300" />
+          <option name="moduleName" value="Rafiky_Connect.app" />
+        </CURLModuleInfo>
+      </list>
+    </option>
+  </component>
+</project>

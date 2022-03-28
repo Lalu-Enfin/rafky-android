@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable-v24/button_green_border_corner_radius.xml" value="0.17263513513513515" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable-v24/button_green_corner_radius.xml" value="0.13958333333333334" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable-v24/location_button_corner_radius.xml" value="0.26614583333333336" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.26205128205128203" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/button_bg_corener.xml" value="0.16644951140065148" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/dialog_canel_button_bg.xml" value="0.159375" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/headphone_dialog_bg.xml" value="0.1680921052631579" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/ic_close_red.xml" value="0.159375" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/ic_close_red_icon.xml" value="0.159375" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/ic_cloud_2.xml" value="0.15347222222222223" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/lalguage_button_bg.xml" value="0.1388888888888889" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/media_dialog_bg.xml" value="0.14010416666666667" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/rounded_dialog.xml" value="0.26205128205128203" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/rounded_top_corners_background.xml" value="0.26205128205128203" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/drawable/toolbar_dropshadow.xml" value="0.17090301003344482" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/font/open_sans_extrabold.xml" value="0.28020833333333334" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/activity_event_layout.xml" value="0.2" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/activity_language_layout.xml" value="0.176" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/activity_login_layout.xml" value="0.152" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/activity_splashscreen_layout.xml" value="0.12" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/activity_streaming_layout.xml" value="0.176" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/common_alert_dialog.xml" value="0.176" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/common_alert_dialog_button.xml" value="0.14322916666666666" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/common_alert_dialog_cross.xml" value="0.14322916666666666" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/common_alert_dialog_custom.xml" value="0.1234375" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/custom_progress_view.xml" value="0.25" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/event_list_item_room.xml" value="0.152" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/event_list_item_session.xml" value="0.16216216216216217" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/event_placeholder_layout.xml" value="0.136" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/event_toolbar.xml" value="0.2" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/headphone_dialog_layout.xml" value="0.12" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/language_list_item.xml" value="0.14901315789473685" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/language_toolbar.xml" value="0.176" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/no_internet_dialog.xml" value="0.176" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/no_room_avilable_layout.xml" value="0.15789473684210525" />
+        <entry key="..\:/Rafiky Android Project/app/src/main/res/layout/toolbar_title.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,118 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+    defaultConfig {
+        applicationId "com.rafiky.connect"
+        minSdk 27
+        targetSdk 31
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+    flavorDimensions "default"
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    productFlavors{
+
+        developement{
+            versionCode  1
+            versionName  "1.0.0"
+            applicationId "com.rafiky.connect"
+            resValue "string", "app_name", "Rafiky Connect"
+            buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
+        }
+
+        staging{
+            versionCode  1
+            versionName  "1.0.0"
+            applicationId "com.rafiky.connect"
+            resValue "string", "app_name", "Rafiky Connect"
+            buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
+        }
+        production{
+            versionCode  1
+            versionName  "1.0.0"
+            applicationId "com.rafiky.connect"
+            resValue "string", "app_name", "Rafiky Connect"
+            buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
+        }
+
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    //Butterknife dependency.
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    // Google location provider dependency
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'androidx.recyclerview:recyclerview'
+    implementation group: 'com.google.android.material', name: 'material', version: '1.1.0-alpha10'
+    //Runtime permission dependency
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    //Glide dependency
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    //network traffic interceptor for debug purpose only
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    // Gradle dependency on Shimmer for Android
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.recyclerview:recyclerview'
+
+    //Circular image view dependency
+    implementation 'com.mikhaellopez:circularimageview:4.1.0'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    //opentalk
+    implementation 'com.opentok.android:opentok-android-sdk:2.19.0'
+
+}

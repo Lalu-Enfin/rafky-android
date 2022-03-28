@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/media_dialog_bg"
+    android:layout_marginStart="@dimen/dimen_25dp"
+    android:layout_marginEnd="@dimen/dimen_25dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/text_selection_color"
+        android:textSize="@dimen/content_text_size"
+        android:padding="@dimen/dimen_15dp"/>
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/opensans_regular"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40dp"
+            android:background="@drawable/location_button_corner_radius"
+            android:layout_gravity="center"
+            android:text="@string/dialog_button_remove"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40dp"
+            android:background="@drawable/dialog_canel_button_bg"
+            android:layout_gravity="center"
+            android:text="@string/dialog_button_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/fonds"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginStart="@dimen/dimen_5dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

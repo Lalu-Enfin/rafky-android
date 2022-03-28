@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+    <TextView
+        android:id="@+id/tv_roomtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:maxLength="20"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:fontFamily="@font/sp_new"
+        android:paddingStart="@dimen/dimen_15dp"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+
+</LinearLayout>

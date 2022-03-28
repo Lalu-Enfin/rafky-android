@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    app:subtitleTextAppearance="@style/ToolbarSubtitleAppearance"
+    android:theme="@style/ToolBarTheme"
+    app:contentInsetStartWithNavigation="0dp"
+    android:gravity="center"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="0"
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/sp_new"
+            android:textSize="@dimen/dimen_12sp"
+            android:drawableLeft="@drawable/ic_arrow_back_"
+            android:text=""/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="-40dp"
+            android:gravity="center"
+            android:fontFamily="@font/sp_new"
+            android:textSize="@dimen/dimen_18sp"
+            android:text="Your Event"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.Toolbar>
+

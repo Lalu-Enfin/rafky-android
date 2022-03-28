@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="colorPrimary">#CC1A34</color>
+    <color name="colorPrimaryDark">#CC1A34</color>
+    <color name="colorAccent">#5716BC</color>
+    <color name="colorSecondary">#6748FE</color>
+    <color name="colorSecondaryLight">#d7d7fd</color>
+    <color name="colorSecondarygray">#CBCBF1</color>
+    <color name="colorStatus">#19242D</color>
+    <color name="blue_gray">#7D7DEB</color>
+
+    <color name="light_gray">#E4E4E4</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="Red">#FF0000</color>
+    <color name="text_color">#BCBCBC</color>
+    <color name="text_color_dark">#7A7777</color>
+    <color name="text_selection_color">#2C2C2C</color>
+    <color name="font_color">#616161</color>
+    <color name="profile_link_color">#00a2ff</color>
+    <color name="profile_link_color2">#009CF5</color>
+    <color name="divider_color">#EEEEEE</color>
+    <color name="line_separation_color">#F5F5F5</color>
+    <color name="light_black">#222222</color>
+    <color name="arrow_grey">#7B7B7B</color>
+    <color name="locationTitleColor">#ABABAB</color>
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+    <color name="lightGreen">#dbf0d8</color>
+    <color name="green">#0A9157</color>
+    <color name="call_btn_green">#14A20D</color>
+    <color name="shimmerBackground">#2D345A</color>
+    <color name="category_background">#ffebeb</color>
+    <color name="cart_grey">#EBE9E9</color>
+    <color name="sky_blue">#029BFE</color>
+    <color name="light_green">#DAF1D7</color>
+    <color name="chat_bg_color">#eedddd</color>
+    <color name="fonds">#4B4B4B</color>
+    <color name="trsting">#CC1A34</color>
+    <color name="green_light">#ADF9D8</color>
+    <color name="lihth">#F8F8F8</color>
+    <color name="gardient_black">#000000</color>
+    <color name="discount_label">#FF9800</color>
+    <item name="app_logo_startColor" type="color">#FF792A7B</item>
+    <item name="app_logo_endColor" type="color">#FF97245D</item>
+
+    //rafiky
+    <color name="app_text_color">#5716BC</color>
+    <color name="app_theme_color">#19242D</color>
+    <color name="app_theme_color_dark">#0B1117</color>
+</resources>

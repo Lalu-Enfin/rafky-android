@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme_color"
+    android:orientation="vertical"
+    tools:context=".ui.Event.EventActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <include
+            android:id="@+id/actionToolbar"
+            layout="@layout/toolbar_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:layout_marginBottom="@dimen/dimen_25dp"
+        android:fontFamily="@font/sp_new"
+        android:gravity="center"
+        android:text="@string/app_tittle_name"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/dimen_25dp" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerViewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/app_theme_color_dark"
+        android:visibility="gone"
+        app:shimmer_auto_start="false"
+        app:shimmer_base_color="@color/app_theme_color_dark"
+        app:shimmer_duration="800"
+        app:shimmer_highlight_color="@color/app_theme_color_dark">
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+
+            <include layout="@layout/event_placeholder_layout" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200dp"
+            android:layout_gravity="center"
+            android:background="@color/app_theme_color"
+            android:scaleType="centerCrop"
+            android:src="@drawable/audio_visuals" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_50dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sp_new"
+                android:gravity="center"
+                android:text="Choose language"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_language"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@drawable/lalguage_button_bg"
+                android:fontFamily="@font/sp_new"
+                android:gravity="center"
+                android:text="Language"
+                android:textAllCaps="false"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/dimen_14dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_above="@+id/bt_disconect"
+        android:background="@color/app_text_color" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_disconect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_theme_color"
+        android:fontFamily="@font/sp_new"
+        android:padding="@dimen/dimen_15dp"
+        android:text="Disconnect"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18sp" />
+</RelativeLayout>

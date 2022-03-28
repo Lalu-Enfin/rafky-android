@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme_color"
+    android:id="@+id/cons_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:text="@string/app_tittle_name"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/dimen_40sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name_hint_text"
+            android:fontFamily="@font/sp_new"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sp_new"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:inputType="text"
+                android:digits="0123456789-qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM "
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/dimen_16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_email_hit_text"
+            android:fontFamily="@font/sp_new"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/sp_new"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_meetingid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_meeting_id_hint_text"
+            app:placeholderText="123-456-7890"
+            app:placeholderTextColor="@color/arrow_grey"
+            android:fontFamily="@font/sp_new"
+            android:textColorHint="@color/white">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_meetingid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sp_new"
+                android:imeOptions="actionDone"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:digits="0123456789-"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_text_color"
+            android:fontFamily="@font/sp_new"
+            android:gravity="center"
+            android:text="@string/btn_title_connect"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp" />
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
