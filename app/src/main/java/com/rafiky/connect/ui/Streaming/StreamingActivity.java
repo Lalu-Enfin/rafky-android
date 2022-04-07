@@ -227,9 +227,6 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
         }
     };
 
-
-
-
     Session.SignalListener signalListener = new Session.SignalListener() {
         @Override
         public void onSignalReceived(Session sessionValue, String receivedSignalType, String data, Connection connection) {
@@ -299,7 +296,6 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
                 e.printStackTrace();
             }
 
-
         }
     };
 
@@ -323,7 +319,6 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
             onHideProgress();
             onShowToast(getString(R.string.onconnect_msg));
             streamingPresenter.updateListnerDetails(languageList.getName(), eventData.getEventId());
-
         }
 
         @Override
@@ -451,8 +446,6 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
             if (!NetworkUtil.isConnected(mContext)) {
                 onShowToast(mContext.getResources().getString(R.string.no_internet));
             }
-
-
         }
     };
 

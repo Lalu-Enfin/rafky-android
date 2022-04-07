@@ -151,7 +151,6 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
                 startActivity(intent);
                 this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 dialog.dismiss();
-
             } else {
                 this.finish();
                 Intent intent = new Intent(this, LoginActivity.class);
@@ -167,17 +166,14 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
     public void onSucessEventData(EventResponseModelClass.DataBean data) {
         Logger.e("onSucessEventData", data);
         if (data != null) {
-            TypeToken<EventResponseModelClass.DataBean> token = new TypeToken<EventResponseModelClass.DataBean>() {
-            };
+            TypeToken<EventResponseModelClass.DataBean> token = new TypeToken<EventResponseModelClass.DataBean>() {};
             eventData = new EventResponseModelClass().getData();
             eventData = new Gson().fromJson(new Gson().toJson(data), token.getType());
             List<EventResponseModelClass.DataBean.RoomsBean> roomsBeanList = eventData.getRooms();
             if (roomsBeanList != null && !roomsBeanList.isEmpty()) {
                 init(roomsBeanList);
             }
-
         }
-
     }
 
     @Override
@@ -290,7 +286,6 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
             public void onScrollStateChanged(AbsListView view, int scrollState) {
 
             }
-
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
                 swipeRefreshLayout.setEnabled(firstVisibleItem == 0);
@@ -319,13 +314,11 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
                 Log.e("clecked", roomsBeanList.get(groupPosition).getRoomName() + "session" + roomsBeanList.get(groupPosition).getSessions().get(childPosition).getSessionName());
                 if (eventPresenter.isSessionTimeCheck(roomsBeanList.get(groupPosition), roomsBeanList.get(groupPosition).getSessions().get(childPosition))) {
                     if (NetworkUtil.isConnected(mContext)) {
-
                         Intent languageIntent = new Intent(EventActivity.this, LanguageActivity.class);
                         languageIntent.putExtra(Constants.KEY_EVENTDATA_LANGUAGE, new Gson().toJson(eventData));
                         languageIntent.putExtra(Constants.KEY_EVENT_SESSION, new Gson().toJson(roomsBeanList.get(groupPosition).getSessions().get(childPosition)));
                         startActivity(languageIntent);
                         (EventActivity.this).overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-
                     }else {
                         NoInternetDialog noInternetDialog = new NoInternetDialog(mContext);
                         noInternetDialog.setRetryListener(EventActivity.this);

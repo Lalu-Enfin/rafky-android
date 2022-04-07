@@ -23,6 +23,7 @@
     <string name="validation_meetingid_required">Meeting Id Required</string>
     <string name="snackbar_ok_title">OK</string>
     <string name="error_room_not_found">Room Not Found!</string>
+    <string name="error_incorrect_code">Incorrect Code!\nReinsert the code please.</string>
     <string name="error_title">Error</string>
     <string name="no_language_available">No Language Available</string>
     <string name="events_title">Events</string>

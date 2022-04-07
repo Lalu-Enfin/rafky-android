@@ -109,7 +109,7 @@ public class LoginPresenter implements LoginContract.Presnter {
                             Log.e("onGetEventDetails_response : ", response.body());
                             Logger.e(String.valueOf(response));
                             if (new JsonParser().parse(response.body()).getAsJsonObject().has("error")) {
-                                mvpView.onShowErrorDialog(mContext.getString(R.string.app_tittle_string), mContext.getString(R.string.error_room_not_found), false);
+                                mvpView.onShowErrorDialog(mContext.getString(R.string.app_tittle_string), mContext.getString(R.string.error_incorrect_code), false);
                                 sharedPreferenceData.deleteAllPreference();
                             } else {
                                 Type listType = new TypeToken<EventResponseModelClass>() {}.getType();

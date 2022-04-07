@@ -54,7 +54,6 @@ public class StreamingPresenter implements StreamingContract.Presenter{
         String meetingId = sharedPreferenceData.getString(Constants.KEY_MEETING_ID);
 
         UpdateListnerDetailsModel requestModelClass = new UpdateListnerDetailsModel();
-
         requestModelClass.setName(userName);
         requestModelClass.setEmail(userEmail);
         requestModelClass.setEvent_id(eventId);

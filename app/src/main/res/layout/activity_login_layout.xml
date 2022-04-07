@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sp_new"
                 android:imeOptions="actionDone"
-                android:maxLength="15"
+                android:maxLength="12"
                 android:maxLines="1"
                 android:inputType="phone"
                 android:digits="0123456789-"
@@ -123,7 +123,5 @@
             android:textColor="@color/white"
             android:textSize="@dimen/dimen_18sp" />
     </RelativeLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
