@@ -69,26 +69,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/shapableiv"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_80dp"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/logo_img" />
-
-        <ExpandableListView
-            android:id="@+id/expandblelist"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/shapableiv"
-            android:scrollIndicators="right" />
+            android:orientation="vertical">
 
+            <ExpandableListView
+                android:id="@+id/expandblelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollIndicators="right"
+                android:layout_weight="0"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/shapableiv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:src="@drawable/logo_img" />
 
-    </RelativeLayout>
+        </LinearLayout>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

@@ -457,13 +457,11 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
             Log.e(TAG, "initialsignaling_from_onConnected");
             initialSignaling(session);
         }
-
         @Override
         public void onDisconnected(SubscriberKit subscriberKit) {
             Log.d(TAG, "onDisconnected: Subscriber disconnected. Stream: " + subscriberKit.getStream().getStreamId());
             stopTimer(); // cancel TIMER
         }
-
         @Override
         public void onError(SubscriberKit subscriberKit, OpentokError opentokError) {
             Log.e(TAG, "SubscriberKit onError: " + opentokError.getMessage());

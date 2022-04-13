@@ -114,10 +114,7 @@ public class EventPresenter implements EventContract.Presenter{
     @Override
     public boolean isSessionTimeCheck(EventResponseModelClass.DataBean.RoomsBean roomsBean, EventResponseModelClass.DataBean.RoomsBean.SessionsBean sessionsBean)  {
         Boolean returnFlag = false ;
-        Log.i("date",sessionsBean.getSessionDate());
-        Log.i("startTime",sessionsBean.getSessionStartTime());
-        Log.i("endTime",sessionsBean.getSessionEndTime());
-        Log.i("sessionsBean",sessionsBean.toString());
+
         try {
             Date strDate = AppUtils.getDateFormat(sessionsBean.getSessionStartTime());
             Date endDate = AppUtils.getDateFormat(sessionsBean.getSessionEndTime());

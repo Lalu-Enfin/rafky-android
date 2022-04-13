@@ -75,13 +75,22 @@
                 android:src="@drawable/headset" />
 
             <TextView
-                android:id="@+id/tv_headphone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/sp_new"
+                android:text="For a better audio experience"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dimen_16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:justificationMode="inter_word"
                 android:layout_marginBottom="@dimen/dimen_30dp"
                 android:fontFamily="@font/sp_new"
-                android:text="Please connect the headphones"
+                android:text="Please connect your headphones"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/dimen_16sp" />
 

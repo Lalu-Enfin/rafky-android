@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -18,6 +19,9 @@ import android.view.WindowManager;
 import android.widget.AbsListView;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -99,8 +103,7 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
         }
         if (getIntent().getExtras() != null) {
             if (getIntent().getExtras().getString(Constants.KEY_EVENTDATA) != null) {
-                TypeToken<EventResponseModelClass.DataBean> token = new TypeToken<EventResponseModelClass.DataBean>() {
-                };
+                TypeToken<EventResponseModelClass.DataBean> token = new TypeToken<EventResponseModelClass.DataBean>() {};
                 eventData = new EventResponseModelClass().getData();
                 eventData = new Gson().fromJson(getIntent().getStringExtra(Constants.KEY_EVENTDATA).toString(), token.getType());
                 List<EventResponseModelClass.DataBean.RoomsBean> roomsBeanList = eventData.getRooms();
@@ -280,7 +283,6 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
         adpter = new EventExpandableListView(mContext, roomsBeanList);
         if (expandableListView != null)
             expandableListView.setAdapter(adpter);
-
         expandableListView.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
@@ -303,6 +305,31 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
                     .load(R.drawable.logo_img)
                     .placeholder(R.drawable.logo_img)
                     .into(imageviewLogo);
+        }
+
+        if(roomsBeanList.size() > 3){
+            LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    1.0f
+            );
+            expandableListView.setLayoutParams(param);
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, height);
+            lp.setMargins(0, 0, 0, 15);
+            imageviewLogo.setLayoutParams(lp);
+
+        }else {
+            LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    0.0f
+            );
+            expandableListView.setLayoutParams(param);
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, height);
+            lp.setMargins(0, 200, 0, 15);
+            imageviewLogo.setLayoutParams(lp);
         }
 
         stopShimmer();
