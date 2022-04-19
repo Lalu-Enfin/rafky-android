@@ -207,6 +207,7 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
         Log.i(TAG, "apiKey: " + apiKey);
         Log.i(TAG, "sessionId: " + sessionId);
         Log.i(TAG, "token: " + token);
+        sharedPreferenceData.setString(Constants.KEY_TEMP_SESSION_ID,sessionData.getOpentokSessionId());
         session = new Session.Builder(this, apiKey, sessionId).build();
         session.setConnectionListener(connectionListener);
         session.setSessionListener(sessionListener);
@@ -276,7 +277,6 @@ public class StreamingActivity extends BaseActivity implements StreamingContract
                                                 Log.d(TAG, "unsubscribe");
                                                 session.unsubscribe(subscriber);
                                             }
-
                                     } else {
                                         Log.d(TAG, "ignore");
                                     }

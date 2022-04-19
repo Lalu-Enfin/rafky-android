@@ -341,6 +341,7 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
                 Log.e("clecked", roomsBeanList.get(groupPosition).getRoomName() + "session" + roomsBeanList.get(groupPosition).getSessions().get(childPosition).getSessionName());
                 if (eventPresenter.isSessionTimeCheck(roomsBeanList.get(groupPosition), roomsBeanList.get(groupPosition).getSessions().get(childPosition))) {
                     if (NetworkUtil.isConnected(mContext)) {
+                        sharedPreferenceData.setString(Constants.KEY_TEMP_SESSION_ID,"");
                         Intent languageIntent = new Intent(EventActivity.this, LanguageActivity.class);
                         languageIntent.putExtra(Constants.KEY_EVENTDATA_LANGUAGE, new Gson().toJson(eventData));
                         languageIntent.putExtra(Constants.KEY_EVENT_SESSION, new Gson().toJson(roomsBeanList.get(groupPosition).getSessions().get(childPosition)));

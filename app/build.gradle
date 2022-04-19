@@ -8,8 +8,8 @@ android {
         applicationId "com.rafiky.connect"
         minSdk 27
         targetSdk 31
-        versionCode 17
-        versionName "5.5"
+        versionCode 18
+        versionName "5.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -47,23 +47,23 @@ android {
 
     productFlavors{
         developement{
-            versionCode  17
-            versionName  "5.5"
+            versionCode  18
+            versionName  "5.6"
             applicationId "com.rafiky.connect"
             resValue "string", "app_name", "Rafiky Connect"
             buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
         }
 
         staging{
-            versionCode  17
-            versionName  "5.5"
+            versionCode  18
+            versionName  "5.6"
             applicationId "com.rafiky.connect"
             resValue "string", "app_name", "Rafiky Connect"
             buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
         }
         production{
-            versionCode  17
-            versionName  "5.5"
+            versionCode  18
+            versionName  "5.6"
             applicationId "com.rafiky.connect"
             resValue "string", "app_name", "Rafiky Connect"
             buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'

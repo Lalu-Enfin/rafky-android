@@ -7,6 +7,7 @@ public class Constants {
     public static final String KEY_USER_NAME = "user_name";
     public static final String KEY_USER_EMAIL = "user_email";
     public static final String KEY_MEETING_ID = "meeting_id";
+    public static final String KEY_TEMP_SESSION_ID = "temp_session";
 
 
     public static final String ERROR_TITLE = "Error";

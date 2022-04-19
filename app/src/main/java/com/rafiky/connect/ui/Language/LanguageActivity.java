@@ -196,11 +196,20 @@ public class LanguageActivity extends BaseActivity implements LanguageContract.M
     public void onSelectedLanguage(EventResponseModelClass.DataBean.LanguagesBean lanfuageItem) {
         languagesBean = null;
         languagesBean = lanfuageItem;
-        new HeadphoneDialog(mContext, this::dialogOkClicked).show();
+        if(sharedPreferenceData.getString(Constants.KEY_TEMP_SESSION_ID).equals("") || !sharedPreferenceData.getString(Constants.KEY_TEMP_SESSION_ID).equalsIgnoreCase(sessionData.getOpentokSessionId())){
+            new HeadphoneDialog(mContext, this::dialogOkClicked).show();
+        }else {
+            gotoStreaming();
+        }
+
     }
 
     @Override
     public void dialogOkClicked() {
+        gotoStreaming();
+    }
+
+    public void gotoStreaming(){
         if (NetworkUtil.isConnected(mContext)) {
             Intent streamIntent = new Intent(LanguageActivity.this, StreamingActivity.class);
             streamIntent.putExtra(Constants.KEY_LANGUAGE, new Gson().toJson(languagesBean));
@@ -214,4 +223,5 @@ public class LanguageActivity extends BaseActivity implements LanguageContract.M
             noInternetDialog.show();
         }
     }
+
 }

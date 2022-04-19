@@ -5,3 +5,5 @@ Dapp/src/main/java/com/rafiky/connect/ui/Streaming/OpenTokConfig.java,9\e\9ef1e
 Napp/src/main/java/com/rafiky/connect/ui/Splashscreen/SplashScreenActivity.java,3\4\34ebc89fd1b6cb51d58210a3814a9303221a7981
 y
 Iapp/src/main/java/com/rafiky/connect/ui/Streaming/StreamingPresenter.java,0\4\047a11711fc0055ce351746fa67cc4b6953f0eac
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
