@@ -313,6 +313,7 @@ public class EventActivity extends BaseActivity implements EventContract.MvpView
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     1.0f
             );
+
             expandableListView.setLayoutParams(param);
             int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, height);
