@@ -1,0 +1,19 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†Ó‡¤ıÿÿÿÿ8ˆòŞñš0
+j	java:S116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š€ é8¨òŞñš0
+£
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯çµÄşÿÿÿÿ8¨òŞñš0
+£
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ô—Áöøÿÿÿÿ8¨òŞñš0
+
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûÖh8¨òŞñš0
+£
+java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ığÆİıÿÿÿÿ8¨òŞñš0
+
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şº“£8¨òŞñš0
+
+java:S1186b"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ìğŒİ8¨òŞñš0
+€
+java:S1450"cRemove the "sharedPreferenceData" field and declare it as a local variable in the relevant methods.(‡ø×˜8¯òŞñš0
+U
+java:S1068"8Remove this unused "sharedPreferenceData" private field.(‡ø×˜8¿òŞñš0

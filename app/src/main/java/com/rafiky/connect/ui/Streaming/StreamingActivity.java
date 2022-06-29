@@ -48,7 +48,7 @@ import com.rafiky.connect.utils.NetworkUtil;
 import com.rafiky.connect.utils.NoInternetDialog;
 
 import org.json.JSONObject;
-import org.otwebrtc.NetworkMonitorAutoDetect;
+
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

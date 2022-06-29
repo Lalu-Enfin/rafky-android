@@ -60,15 +60,12 @@ public class EventExpandableListView extends BaseExpandableListAdapter {
 
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-
         if(convertView == null){
             LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.event_list_item_room, null);
         }
-
         TextView title = (TextView) convertView.findViewById(R.id.tv_roomtitle);
         title.setText(roomsBeanList.get(groupPosition).getRoomName());
-
         return convertView;
     }
 
