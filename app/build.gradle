@@ -7,8 +7,8 @@ android {
         applicationId "com.rafiky.connect"
         minSdk 27
         targetSdk 32
-        versionCode 19
-        versionName "5.7"
+        versionCode 20
+        versionName "5.8"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -46,23 +46,23 @@ android {
 
     productFlavors{
         developement{
-            versionCode  19
-            versionName  "5.7"
+            versionCode  20
+            versionName  "5.8"
             applicationId "com.rafiky.connect"
             resValue "string", "app_name", "Rafiky Connect"
             buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
         }
 
         staging{
-            versionCode  19
-            versionName  "5.7"
+            versionCode  20
+            versionName  "5.8"
             applicationId "com.rafiky.connect"
             resValue "string", "app_name", "Rafiky Connect"
             buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
         }
         production{
-            versionCode  19
-            versionName  "5.7"
+            versionCode  20
+            versionName  "5.8"
             applicationId "com.rafiky.connect"
             resValue "string", "app_name", "Rafiky Connect"
             buildConfigField "String", "BASE_URL", '"https://api.rafikyconnect.net/"'
@@ -73,7 +73,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
